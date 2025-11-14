@@ -13,12 +13,13 @@
 
 :root {
     /* Primary Colors */
-    --green-300: hsl(167, 43%, 70%);
     --red-400: hsl(7, 99%, 70%);
     --yellow-500: hsl(51, 100%, 49%);
-    --green-500: hsl(167, 34%, 41%);
-    --blue-500: hsl(198, 56%, 33%);
+    --green-300: hsl(167, 43%, 70%);
+    --green-400: hsl(167, 34%, 41%);
+    --green-500: hsl(168, 45%, 32%);
     --green-800: hsl(167, 40%, 24%);
+    --blue-400: hsl(198, 56%, 33%);
     --blue-800: hsl(198, 62%, 26%);
 
     /* Neutral Colors */
@@ -57,6 +58,10 @@ a {
     pointer-events: none;
 }
 
+.animatable {
+    transition: 0.2s ease-in;
+}
+
 /* ============================================
    HEADER & NAVIGATION
    ============================================ */
@@ -90,6 +95,10 @@ a {
     color: var(--white);
 }
 
+.site-header .nav-link:hover {
+    color: var(--blue-400);
+}
+
 .contact-btn {
     margin-left: 3rem;
     padding: 1.125rem 1.75rem;
@@ -100,6 +109,12 @@ a {
     text-transform: uppercase;
     color: var(--grey-950);
     background-color: var(--white);
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    color: white;
+    background-color: hsla(0, 100%, 100%, 0.3);
 }
 
 /* ============================================
@@ -199,6 +214,11 @@ a {
     background-color: hsla(51, 100%, 49%, 0.2);
 }
 
+.feature-card:first-of-type a:hover::before {
+    height: 40%;
+    background-color: var(--yellow-500);
+}
+
 .feature-image:first-of-type {
     order: 2;
 }
@@ -210,6 +230,11 @@ a {
 
 .feature-card:last-of-type a::before {
     background-color: hsl(7, 99%, 70%, 0.2);
+}
+
+.feature-card:last-of-type a:hover::before {
+    height: 40%;
+    background-color: var(--red-400);
 }
 
 .feature-image:last-of-type {
@@ -263,7 +288,7 @@ a {
 }
 
 .graphic-design p {
-    color: var(--green-500);
+    color: var(--green-400);
 }
 
 /* Photography Service */
@@ -276,7 +301,7 @@ a {
 }
 
 .photography p {
-    color: var(--blue-500);
+    color: var(--blue-400);
 }
 
 /* ============================================
@@ -374,7 +399,11 @@ a {
 }
 
 .site-footer .nav-link {
-    color: var(--green-500);
+    color: var(--green-400);
+}
+
+.site-footer .nav-link:hover {
+    color: var(--white);
 }
 
 .social-links {
@@ -382,4 +411,21 @@ a {
     align-items: center;
     gap: 2rem;
     margin-top: 5rem;
+}
+
+.social-link svg {
+    fill: var(--green-500);
+}
+
+.social-link:hover svg {
+    fill: var(--white);
+}
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    .animatable {
+        transition: none;
+    }
 }
