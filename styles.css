@@ -77,17 +77,17 @@ a {
 }
 
 .logo svg {
-    width: 10rem;
+    width: clamp(8rem, 11.125vw, 14rem);
 }
 
 .nav-links {
     display: flex;
-    gap: 3rem;
+    gap: clamp(2.25rem, 3.375vw, 4.25rem);
 }
 
 .nav-link {
     font-family: var(--font-family-primary);
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1.125vw, 1.375rem);
     font-weight: var(--font-weight-barlow-semibold);
 }
 
@@ -100,11 +100,11 @@ a {
 }
 
 .contact-btn {
-    margin-left: 3rem;
-    padding: 1.125rem 1.75rem;
+    margin-left: clamp(2.25rem, 3.375vw, 4.25rem);
+    padding: clamp(0.875rem, 1.25vw, 1.75rem) clamp(1.375rem, 2vw, 2.75rem);
     border-radius: 8rem;
     font-family: var(--font-family-seconday);
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1.125vw, 1.375rem);
     font-weight: var(--font-weight-fraunces-bold);
     text-transform: uppercase;
     color: var(--grey-950);
@@ -137,7 +137,7 @@ a {
 
 #hero-heading {
     font-family: var(--font-family-seconday);
-    font-size: 4rem;
+    font-size: clamp(2.75rem, 4.5vw, 5.75rem);
     font-weight: var(--font-weight-fraunces-black);
     text-transform: uppercase;
     letter-spacing: 0.625rem;
@@ -163,20 +163,20 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2.5rem;
-    padding: 0 6rem 0 10rem;
+    gap: clamp(1.75rem, 2.75vw, 4.25rem);
+    padding: 0 clamp(4.25rem, 6.625vw, 8rem) 0 clamp(8rem, 11.125vw, 14rem);
 }
 
 .feature-card h3 {
     font-family: var(--font-family-seconday);
-    font-size: 3rem;
+    font-size: clamp(2.25rem, 3.375vw, 4.25rem);
     font-weight: var(--font-weight-fraunces-black);
     color: var(--grey-950);
 }
 
 .feature-card p {
     font-family: var(--font-family-primary);
-    font-size: 1.125rem;
+    font-size: clamp(0.875rem, 1.25vw, 1.75rem);
     font-weight: var(--font-weight-barlow-semibold);
     line-height: 1.8;
     color: var(--grey-550);
@@ -185,7 +185,7 @@ a {
 .feature-card a {
     position: relative;
     font-family: var(--font-family-seconday);
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1.125vw, 1.375rem);
     font-weight: var(--font-weight-fraunces-black);
     text-transform: uppercase;
     color: var(--grey-950);
@@ -255,8 +255,8 @@ a {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 1.5rem;
-    padding-bottom: 4rem;
+    gap: clamp(1.125rem, 1.625vw, 2.125rem);
+    padding-bottom: clamp(2.75rem, 4.5vw, 5.75rem);
     text-align: center;
     aspect-ratio: 6 / 5;
     background-repeat: no-repeat;
@@ -266,14 +266,14 @@ a {
 
 .service h3 {
     font-family: var(--font-family-seconday);
-    font-size: 2rem;
+    font-size: clamp(1.375rem, 2vw, 2.75rem);
     font-weight: var(--font-weight-fraunces-black);
 }
 
 .service p {
-    width: 24rem;
+    width: clamp(17rem, 24.5vw, 31rem);
     font-family: var(--font-family-primary);
-    font-size: 1.125rem;
+    font-size: clamp(0.75rem, 1.125vw, 1.375rem);
     font-weight: var(--font-weight-barlow-semibold);
     line-height: 1.8;
 }
@@ -311,13 +311,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    padding: 10rem 0;
+    gap: clamp(3.5rem, 5.5vw, 7rem);
+    padding: clamp(8rem, 11.125vw, 14rem) 0;
 }
 
 #client-testimonials-heading {
     font-family: var(--font-family-seconday);
-    font-size: 1.5rem;
+    font-size: clamp(1.125rem, 1.625vw, 2.125rem);
     font-weight: var(--font-weight-fraunces-bold);
     text-transform: uppercase;
     letter-spacing: 0.25rem;
@@ -335,20 +335,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 22rem;
-    gap: 4rem;
+    width: clamp(17rem, 24.5vw, 31rem);
+    gap: clamp(2.75rem, 4.5vw, 5.75rem);
     text-align: center;
 }
 
 .profile-picture {
-    width: 5rem;
+    width: clamp(3.5rem, 5.5vw, 7rem);
     height: auto;
     border-radius: 50%;
 }
 
 .details {
     font-family: var(--font-family-primary);
-    font-size: 1.125rem;
+    font-size: clamp(0.875rem, 1.25vw, 1.75rem);
     font-weight: var(--font-weight-barlow-semibold);
     line-height: 1.8;
     color: var(--grey-600);
@@ -356,7 +356,7 @@ a {
 
 .name {
     font-family: var(--font-family-seconday);
-    font-size: 1.125rem;
+    font-size: clamp(0.875rem, 1.25vw, 1.75rem);
     font-weight: var(--font-weight-fraunces-black);
     color: var(--grey-950);
 }
@@ -364,7 +364,7 @@ a {
 .role {
     margin-top: 0.75rem;
     font-family: var(--font-family-primary);
-    font-size: 0.875rem;
+    font-size: clamp(0.625rem, 1vw, 1.125rem);
     font-weight: var(--font-weight-barlow-semibold);
     color: var(--grey-400);
 }
@@ -390,12 +390,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0;
+    padding: clamp(2.75rem, 4.5vw, 5.75rem) 0;
     background-color: var(--green-300);
 }
 
 .site-footer nav {
-    margin-top: 2rem;
+    margin-top: clamp(1.5rem, 2.25vw, 2.75rem);
 }
 
 .site-footer .nav-link {
@@ -409,11 +409,13 @@ a {
 .social-links {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-top: 5rem;
+    gap: clamp(1.5rem, 2.25vw, 2.75rem);
+    margin-top: clamp(3.5rem, 5.5vw, 7rem);;
 }
 
 .social-link svg {
+    width: clamp(1rem, 1.375vw, 1.75rem);
+    height: auto;
     fill: var(--green-500);
 }
 
